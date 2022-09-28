@@ -59,22 +59,22 @@ public class DoubleLinkedList {
 	static void print(Node node) {
 		while(node!=null && node.next!=null)
 		{
-			System.out.println(node.data+" ");
+			System.out.print(node.data+" ");
 			node=node.next;
 		}
 		if(node!=null) {
-			System.out.println(node.data);
+			System.out.print(node.data);
 		}
 	}
 	public static void main(String args[])
 	{
 		
-		
+		add_node(5);
 		add_node(4);
 		add_node(3);
 		add_node(2);
 		add_node(1);
-		int n=2;
+		int n=3;
 		System.out.println("List before rotation");
 		print(head);
 		System.out.println();
